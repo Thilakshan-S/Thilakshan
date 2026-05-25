@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://thilakshan.netlify.app/</loc>
-    <lastmod>2026-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+  <loc>https://thilakshan.netlify.app/</loc>
+  <lastmod>2026-05-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+
+  <image:image>
+    <image:loc>https://thilakshan.netlify.app/About.WebP</image:loc>
+    <image:title>About Thilakshan</image:title>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://thilakshan.netlify.app/hero%2003.WebP</image:loc>
+    <image:title>Thilakshan Portfolio Hero</image:title>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://thilakshan.netlify.app/Mano%20Motors%20Real%20one.WebP</image:loc>
+    <image:title>Mano Motors Project</image:title>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://thilakshan.netlify.app/My%20First%20Portfolio.WebP</image:loc>
+    <image:title>My First Portfolio Project</image:title>
+  </image:image>
+
+  <image:image>
+    <image:loc>https://thilakshan.netlify.app/site%20logo.WebP</image:loc>
+    <image:title>Thilakshan Site Logo</image:title>
+  </image:image>
+
+</url>
 </urlset>
