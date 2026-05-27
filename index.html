@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thilakshan S - Portfolio</title>
     <link rel="Icon" href="Thilak site/about.WebP" type="image/webp">
+    <script>
+     if (!sessionStorage.getItem("visited")) {
+        sessionStorage.setItem("visited", "true");
+        window.location.href = "skeleton.html";
+        }
+    </script>
 
     <!-- Performance Optimizations -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
