@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -214,6 +215,130 @@
 
         .animate-floating {
             animation: floating 3s ease-in-out infinite;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            background: radial-gradient(circle at top left, rgba(255, 166, 0, 0.04), transparent 25%),
+                        radial-gradient(circle at bottom right, rgba(0, 180, 216, 0.06), transparent 18%),
+                        #070707;
+        }
+
+        #contact .contact-card {
+            background: rgba(6, 6, 6, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        #contact .contact-info-card,
+        #contact .contact-social-card {
+            background: rgba(14, 14, 14, 0.94);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
+        }
+
+        #contact .contact-form-panel {
+            max-width: 520px;
+            min-height: 620px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #contact .contact-info-card {
+            max-width: 320px;
+            width: 100%;
+        }
+
+        #contact .contact-social-card {
+            max-width: 320px;
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            #contact .contact-card {
+                padding: 2rem;
+            }
+
+            #contact .contact-info-card,
+            #contact .contact-social-card {
+                padding: 2rem;
+            }
+        }
+
+        #contact .info-item,
+        #contact .social-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+        }
+
+        #contact .info-item {
+            padding: 1.2rem 1.25rem;
+            border-radius: 2rem;
+        }
+
+        #contact .icon-wrapper {
+            min-width: 56px;
+            min-height: 56px;
+            border-radius: 1.25rem;
+        }
+
+        #contact .contact-card input,
+        #contact .contact-card textarea,
+        #contact .contact-input {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            min-height: 56px;
+        }
+
+        #contact .contact-input--textarea {
+            min-height: 180px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        #contact .contact-card input::placeholder,
+        #contact .contact-card textarea::placeholder,
+        #contact .contact-input::placeholder {
+            color: #6f6f6f;
+        }
+
+        #contact .contact-card input:focus,
+        #contact .contact-card textarea:focus,
+        #contact .contact-input:focus {
+            border-color: rgba(0, 180, 216, 0.75);
+            box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.12);
+        }
+
+        #contact .contact-label {
+            color: #00b4d8;
+            letter-spacing: 0.35em;
+        }
+
+        #contact .contact-cta {
+            background: #ffa600;
+            color: #090909;
+            box-shadow: 0 18px 30px rgba(255, 166, 0, 0.24);
+            min-height: 68px;
+        }
+
+        #contact .contact-cta:hover {
+            background: #ffb93d;
+        }
+
+        #contact .social-card {
+            transition: all 0.25s ease;
+            padding: 1.4rem 1.5rem;
+            border-radius: 1.75rem;
+        }
+
+        #contact .social-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 166, 0, 0.3);
+            background: rgba(255, 166, 0, 0.08);
         }
     </style>
     <!-- Lucide Icons -->
@@ -658,7 +783,7 @@
                                 <i data-lucide="code-2" class="w-8 h-8 text-brand-lightblue"></i>
                             </div>
                             <span
-                                class="text-brand-lightblue/20 font-black text-4xl italic group-hover/card:text-brand-lightblue/40 transition-colors">02</span>
+                                class="text-brand-lightblue/20 font-black text-4xl italic group-hover/card:text-brand-lightblue/40 transition-colors">01</span>
                         </div>
                         <h3
                             class="text-white font-black text-xl mb-4 group-hover/card:text-brand-lightblue transition-colors uppercase tracking-wider">
@@ -713,7 +838,7 @@
                                 <i data-lucide="play" class="w-8 h-8 text-brand-lightblue"></i>
                             </div>
                             <span
-                                class="text-brand-lightblue/20 font-black text-4xl italic group-hover/card:text-brand-lightblue/40 transition-colors">02</span>
+                                class="text-brand-lightblue/20 font-black text-4xl italic group-hover/card:text-brand-lightblue/40 transition-colors">03</span>
                         </div>
                         <h3
                             class="text-white font-black text-xl mb-4 group-hover/card:text-brand-lightblue transition-colors uppercase tracking-wider">
@@ -740,7 +865,7 @@
                                 <i data-lucide="camera" class="w-8 h-8 text-brand-orange"></i>
                             </div>
                             <span
-                                class="text-brand-orange/20 font-black text-4xl italic group-hover/card:text-brand-orange/40 transition-colors">02</span>
+                                class="text-brand-orange/20 font-black text-4xl italic group-hover/card:text-brand-orange/40 transition-colors">04</span>
                         </div>
                         <h3
                             class="text-white font-black text-xl mb-4 group-hover/card:text-brand-orange transition-colors uppercase tracking-wider">
@@ -880,7 +1005,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="relative py-32 bg-[#0a0a0a] overflow-hidden group/contact">
+        <section id="contact" class="relative py-28 overflow-hidden group/contact">
             <!-- Backdrop Text (Consistent with Values section) -->
             <div
                 class="absolute top-1/2 -translate-y-1/2 left-0 w-full pointer-events-none opacity-[0.02] select-none z-0">
@@ -896,136 +1021,117 @@
 
             <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
                 <!-- Block 04: Heading -->
-                <div class="flex flex-col mb-20">
+                <div class="flex flex-col mb-16">
                     <h2
-                        class="text-3xl lg:text-6xl font-black text-white uppercase tracking-tighter pl-8 border-l-4 border-brand-orange leading-none transition-all duration-700 group-hover/contact:pl-12">
-                        Get <span class="text-brand-orange">In Touch</span>
+                        class="text-3xl lg:text-6xl font-black text-white uppercase tracking-[0.1em] pl-8 border-l-4 border-brand-orange leading-none transition-all duration-700 group-hover/contact:pl-12">
+                        GET <span class="text-brand-orange">IN TOUCH</span>
                     </h2>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     <!-- Block 01: Info (Left) -->
-                    <div class="lg:col-span-4 flex flex-col gap-8">
-                        <div
-                            class="p-10 hover:border-brand-orange/30 transition-all duration-700 h-full flex flex-col justify-center gap-10">
-                            <div class="flex items-start gap-6 group/info">
-                                <div
-                                    class="w-14 h-14 rounded-2xl bg-brand-orange/10 flex items-center justify-center group-hover/info:scale-110 transition-transform shadow-lg shadow-brand-orange/5">
-                                    <i data-lucide="map-pin" class="w-7 h-7 text-brand-orange"></i>
+                    <div class="lg:col-span-4 flex justify-center lg:justify-start">
+                        <div class="contact-info-card rounded-[2.5rem] p-6 lg:p-8">
+                            <div class="space-y-4">
+                                <div class="info-item flex items-start gap-4">
+                                    <div
+                                        class="icon-wrapper w-14 h-14 rounded-3xl bg-brand-orange/10 flex items-center justify-center text-brand-orange">
+                                        <i data-lucide="map-pin" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-[10px] uppercase tracking-[0.35em] mb-2 font-black">Address</p>
+                                        <p class="text-white font-medium text-base leading-relaxed">Fairlawn Estate Upcot,<br>Hatton</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4
-                                        class="text-gray-500 font-bold text-xs uppercase tracking-[0.2em] mb-2 font-black">
-                                        Address</h4>
-                                    <p class="text-white font-medium text-lg leading-relaxed">Fairlawn Estate Upcot,
-                                        Hatton</p>
+
+                                <div class="info-item flex items-start gap-4">
+                                    <div
+                                        class="icon-wrapper w-14 h-14 rounded-3xl bg-brand-lightblue/10 flex items-center justify-center text-brand-lightblue">
+                                        <i data-lucide="phone" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-[10px] uppercase tracking-[0.35em] mb-2 font-black">Mobile</p>
+                                        <a href="tel:0762150691" class="text-white font-medium text-base hover:text-brand-lightblue transition-colors">0762150691</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item flex items-start gap-4">
+                                    <div
+                                        class="icon-wrapper w-14 h-14 rounded-3xl bg-brand-lightblue/10 flex items-center justify-center text-brand-lightblue">
+                                        <i data-lucide="mail" class="w-7 h-7"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-400 text-[10px] uppercase tracking-[0.35em] mb-2 font-black">Email</p>
+                                        <a href="mailto:dev.sthilakshan2205@gmail.com" class="text-white font-medium text-base hover:text-brand-lightblue transition-colors">dev.sthilakshan2205@gmail.com</a>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="flex items-start gap-6 group/info">
-                                <div
-                                    class="w-14 h-14 rounded-2xl bg-brand-lightblue/10 flex items-center justify-center border border-brand-lightblue/20 group-hover/info:scale-110 transition-transform shadow-lg shadow-brand-lightblue/5">
-                                    <i data-lucide="phone" class="w-7 h-7 text-brand-lightblue"></i>
-                                </div>
-                                <div>
-                                    <h4
-                                        class="text-gray-500 font-bold text-xs uppercase tracking-[0.2em] mb-2 font-black">
-                                        Mobile</h4>
-                                    <a href="tel:0762150691"
-                                        class="text-white font-medium text-lg hover:text-brand-lightblue transition-colors">0762150691</a>
-                                </div>
-
-                            </div>
-                            <div class="flex items-start gap-6 group/info">
-                                <div
-                                    class="w-14 h-14 rounded-2xl bg-brand-lightblue/10 flex items-center justify-center border border-brand-lightblue/20 group-hover/info:scale-110 transition-transform shadow-lg shadow-brand-lightblue/5">
-                                    <i data-lucide="mail" class="w-7 h-7 text-brand-lightblue"></i>
-                                </div>
-                                <div>
-                                    <h4
-                                        class="text-gray-500 font-bold text-xs uppercase tracking-[0.2em] mb-2 font-black">
-                                        Email</h4>
-                                    <a href="mailto:dev.sthilakshan2205@gmil.com"
-                                        class="text-white font-medium text-lg hover:text-brand-lightblue transition-colors">dev.sthilakshan2205@gmail.com</a>
-                                </div>
-
-                            </div>
-
                         </div>
                     </div>
 
                     <!-- Block 02: Contact Form (Middle) -->
-                    <div class="lg:col-span-5">
-                        <div
-                            class="glass-nav p-10 rounded-[3rem] border border-white/5 hover:border-brand-lightblue/20 transition-all duration-700 bg-white/[0.02]">
-                            <form id="ContactForm" class="space-y-6">
-                                <div class="space-y-2">
-                                    <label
-                                        class="text-[10px] font-black text-brand-lightblue uppercase tracking-widest pl-4">Name</label>
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="contact-card contact-form-panel rounded-[3rem] p-8 lg:p-10">
+                            <form id="ContactForm" class="space-y-5">
+                                <div class="space-y-3">
+                                    <label class="contact-label text-[10px] font-black uppercase tracking-widest">Name</label>
                                     <input id="name" type="text" placeholder="maha"
-                                        class="w-full bg-white/[0.03] border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-600">
+                                        class="w-full contact-input rounded-[1.75rem] px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-500">
                                 </div>
-                                <div class="space-y-2">
-                                    <label
-                                        class="text-[10px] font-black text-brand-lightblue uppercase tracking-widest pl-4">Email</label>
+                                <div class="space-y-3">
+                                    <label class="contact-label text-[10px] font-black uppercase tracking-widest">Email</label>
                                     <input id="email" type="email" placeholder="Maha@gmail.com"
-                                        class="w-full bg-white/[0.03] border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-600">
+                                        class="w-full contact-input rounded-[1.75rem] px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-500">
                                 </div>
-                                <div class="space-y-2">
-                                    <label
-                                        class="text-[10px] font-black text-brand-lightblue uppercase tracking-widest pl-4">Whatsapp
-                                        Number</label>
+                                <div class="space-y-3">
+                                    <label class="contact-label text-[10px] font-black uppercase tracking-widest">Whatsapp Number</label>
                                     <input id="number" type="number" placeholder="0762150691"
-                                        class="w-full bg-white/[0.03] border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-600">
+                                        class="w-full contact-input rounded-[1.75rem] px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-500">
                                 </div>
-                                <div class="space-y-2">
-                                    <label
-                                        class="text-[10px] font-black text-brand-lightblue uppercase tracking-widest pl-4">Message</label>
+                                <div class="space-y-3">
+                                    <label class="contact-label text-[10px] font-black uppercase tracking-widest">Message</label>
                                     <textarea id="message" rows="4" placeholder="Type something"
-                                        class="w-full bg-white/[0.03] border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-600 resize-none"></textarea>
+                                        class="w-full contact-input contact-input--textarea rounded-[1.75rem] px-6 py-4 text-white focus:outline-none focus:border-brand-lightblue transition-all placeholder:text-gray-500 resize-none"></textarea>
                                 </div>
                                 <button id="Submit" type="submit"
-                                    class="w-full py-5 bg-brand-orange text-brand-cyan font-black uppercase tracking-widest rounded-2xl hover:bg-white transition-all transform hover:-translate-y-1 shadow-lg shadow-brand-orange/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed">Send
-                                    Message</button>
+                                    class="contact-cta w-full rounded-[1.75rem] font-black uppercase tracking-widest transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed">Send Message</button>
                             </form>
                         </div>
                     </div>
 
                     <!-- Block 03: Socials (Right) -->
-                        <div class="lg:col-span-3">
-                        <div class="p-10 hover:border-brand-orange/30 transition-all duration-700 h-full flex flex-col justify-center items-center text-center">
-                            <h3 class="text-white font-black text-xl mb-12 uppercase tracking-tighter leading-tight relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-1 after:bg-brand-orange after:rounded-full">
-                                Follow on <br><span class="text-brand-orange">social medias</span>
-                            </h3>
-                            <div class="flex flex-col gap-6 w-full">
-
+                    <div class="lg:col-span-3 flex justify-center lg:justify-end">
+                        <div class="contact-social-card rounded-[2.5rem] p-6 lg:p-8">
+                            <div class="mb-8 text-center">
+                                <h3 class="text-white font-black text-xl uppercase tracking-[0.15em] leading-tight">
+                                    Follow on<br><span class="text-brand-orange">SOCIAL MEDIAS</span>
+                                </h3>
+                            </div>
+                            <div class="flex flex-col gap-4">
                                 <a href="https://www.facebook.com/profile.php?id=61550927966066" target="_blank"
-                                    class="flex items-center justify-between p-6 rounded-xl bg-white/[0.03] border border-white/5 hover:border-brand-orange hover:bg-brand-orange/10 transition-all group/social">
+                                    class="social-card flex items-center justify-between bg-white/[0.03] border border-white/10">
                                     <div class="flex items-center gap-4">
-                                        <i data-lucide="facebook" class="w-5 h-5 text-gray-400 group-hover/social:text-brand-orange transition-colors"></i>
-                                        <span class="text-gray-300 font-bold text-sm tracking-wide">Facebook</span>
+                                        <i data-lucide="facebook" class="w-5 h-5 text-gray-400"></i>
+                                        <span class="text-gray-300 font-semibold text-sm tracking-wide">Facebook</span>
                                     </div>
-                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-600 group-hover/social:text-brand-orange transition-all"></i>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-400"></i>
                                 </a>
-
                                 <a href="https://www.instagram.com/thilak001822/" target="_blank"
-                                    class="flex items-center justify-between p-6 rounded-xl bg-white/[0.03] border border-white/5 hover:border-brand-orange hover:bg-brand-orange/10 transition-all group/social">
+                                    class="social-card flex items-center justify-between bg-white/[0.03] border border-white/10">
                                     <div class="flex items-center gap-4">
-                                        <i data-lucide="instagram" class="w-5 h-5 text-gray-400 group-hover/social:text-brand-orange transition-colors"></i>
-                                        <span class="text-gray-300 font-bold text-sm tracking-wide">Instagram</span>
+                                        <i data-lucide="instagram" class="w-5 h-5 text-gray-400"></i>
+                                        <span class="text-gray-300 font-semibold text-sm tracking-wide">Instagram</span>
                                     </div>
-                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-600 group-hover/social:text-brand-orange transition-all"></i>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-400"></i>
                                 </a>
-
                                 <a href="https://www.linkedin.com/in/sivapragasan-thilakshan-66813b290/" target="_blank"
-                                    class="flex items-center justify-between p-6 rounded-xl bg-white/[0.03] border border-white/5 hover:border-brand-orange hover:bg-brand-orange/10 transition-all group/social">
+                                    class="social-card flex items-center justify-between bg-white/[0.03] border border-white/10">
                                     <div class="flex items-center gap-4">
-                                        <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 group-hover/social:text-brand-orange transition-colors"></i>
-                                        <span class="text-gray-300 font-bold text-sm tracking-wide">LinkedIn</span>
+                                        <i data-lucide="linkedin" class="w-5 h-5 text-gray-400"></i>
+                                        <span class="text-gray-300 font-semibold text-sm tracking-wide">LinkedIn</span>
                                     </div>
-                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-600 group-hover/social:text-brand-orange transition-all"></i>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-400"></i>
                                 </a>
-
                             </div>
                         </div>
                     </div>
